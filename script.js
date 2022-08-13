@@ -27,7 +27,8 @@ function pick() {
     //compares choices
         if (userChoice === computerChoice){
             ties++;
-            document.getElementById("ties").innerHTML = "Ties: " + ties; 
+            document.getElementById("ties").innerHTML = "Ties: " + ties;
+            document.getElementById('result').innerHTML = "Result: " + "Tie!" 
             return "The result is a tie"
             }
 
@@ -35,10 +36,12 @@ function pick() {
         if (computerChoice === "scissors") {
             userScore++;
             document.getElementById('player-score').innerHTML = "Player Score: " + userScore;
+            document.getElementById('result').innerHTML = "Result: " + "User Wins!";
             return "player wins";
         }else{
             computerScore++;
             document.getElementById('computer-score').innerHTML = "Computer Score: " + computerScore;
+            document.getElementById('result').innerHTML = "Result: " + "Computer Wins!";
             return "computer wins";
         }
             }
@@ -47,10 +50,12 @@ function pick() {
          if (computerChoice === "rock") {
             userScore++;
             document.getElementById('player-score').innerHTML = "Player Score: " + userScore;
+            document.getElementById('result').innerHTML = "Result: " + "User Wins!";
              return "player wins";
           } else {
             computerScore++;
             document.getElementById('computer-score').innerHTML = "Computer Score: " + computerScore;
+            document.getElementById('result').innerHTML = "Result: " + "Computer Wins!";
               return "computer wins";
           }
          }
@@ -59,10 +64,12 @@ function pick() {
          if (computerChoice === "rock") {
             computerScore++;
             document.getElementById('computer-score').innerHTML = "Computer Score: " + computerScore;
+            document.getElementById('result').innerHTML = "Result: " + "Computer Wins!";
              return "computer wins";
          } else {
             userScore++;
             document.getElementById('player-score').innerHTML = "Player Score: " + userScore;
+            document.getElementById('result').innerHTML = "Result: " + "User Wins!";
              return "player wins";
         }
          
